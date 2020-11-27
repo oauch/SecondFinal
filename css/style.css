@@ -487,20 +487,6 @@ h1{
 
 /* 미디어 쿼리 */
 
-@media (max-width: 1830px) {
-
-#WantTrip_ex>.title>div, #WantTrip_eat>.title>div{
-    width: 32%;
-}
-#WantTrip_ex>.img>img, #WantTrip_eat>.img>img{
-    width: 30%;
-}
-#content2 .content2_1 .img{
-    width: 30%;
-}
-
-}
-
 /* 아이폰 7, 8기준 */
 
 @media (max-width: 480px) {
@@ -651,20 +637,20 @@ header #title{
 }
 
 .content2_3 .img1{
-   width: 90%;
+    width: 90%;
 }
 .content2_3 .img2{
     width: 90%;
- }
- .content2_3 .img3{
+    }
+    .content2_3 .img3{
     width: 90%;
- }
- .content2_3 .img4{
+    }
+    .content2_3 .img4{
     width: 90%;
- }
- .content2_3 .img5{
+    }
+    .content2_3 .img5{
     width: 90%;
- }
+    }
 
 .youtube .ex{
     font-size: 12px;
@@ -728,6 +714,19 @@ header #title{
 
 #content p{
     font-size: 15px;
+}
+}
+
+@media (max-width: 1830px) {
+
+#WantTrip_ex>.title>div, #WantTrip_eat>.title>div{
+    width: 32%;
+}
+#WantTrip_ex>.img>img, #WantTrip_eat>.img>img{
+    width: 30%;
+}
+#content2 .content2_1 .img{
+    width: 30%;
 }
 
 }
