@@ -1,0 +1,734 @@
+/* 애니메이션 */
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* html 전체적용 */
+html{
+    font-family: "Nanum Myeongjo";
+    background-color: #212121;
+    color: white;
+    
+}
+body{
+    animation: fadein 2s;
+    margin: 0;
+}
+a{
+    text-decoration: none;;
+    color: white;
+}
+a:visited{
+    color: white;
+}
+img{
+    margin: 10px;
+}
+
+h1{
+    font-size: 35px;
+    color: #30A9DE;
+}
+
+
+
+/* 타이틀 */
+#title{
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10px;
+}
+#home{
+    width: 50px;
+    margin: 15px;
+}
+
+
+/* 프로필 섹션 */
+.profile>.img_align{
+    text-align: center;
+}
+
+.img_align>figure{
+    display: inline-block;
+}
+
+.img_align>figure figcaption{
+    text-align: center;
+    padding-top: 5px;
+}
+
+.profile>div>figure>a>img{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #FFEEE4;
+}
+
+
+
+/* 가고 싶은 여행지 */
+
+.want, .want_eat{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+#WantTrip_title{
+    text-align: center;
+}
+
+#WantTrip_ex>.img, #WantTrip_eat>.img{
+    text-align: center;
+}
+
+#WantTrip_ex>.img>img, #WantTrip_eat>.img>img{
+    display: inline-block;
+    width: 31.5%;
+    border: 2px solid #EFDC05;
+}
+
+#WantTrip_ex, #WantTrip_eat>.title{
+    font-size: 26px;
+    text-align: center;
+}
+#WantTrip_ex>.title>div, #WantTrip_eat>.title>div{
+    display: inline-block;
+    width: 33%;
+}
+
+#WantTrip_ex>.ex{
+    font-size: 15px;
+    text-align: center;
+}
+#WantTrip_ex>.ex>div{
+    opacity: 0.1;
+    display: inline-block;
+    width: 32.6%;
+    margin: 20px 0 20px 0;
+    line-height: 30px;
+    letter-spacing: -1px;
+    word-spacing: 1.5px;
+}
+#WantTrip_ex>.ex>div:hover{
+    opacity: 1;
+}
+
+
+
+
+/* 가고 싶은 여행지 배경 이미지 */
+
+#WantTrip_title>.img{
+    position: relative;
+    background-image: url("../img/Paris/title.jpg");
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    border: 2px solid white;
+}
+#WantTrip_title>.img>.img_cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+#WantTrip_title *.ex{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    float: left;                                                                 
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: -1px;
+    word-spacing: 5px;
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+
+#WantTrip2_title>.img{
+    position: relative;
+    background-image: url("../img/Vladivostok/title.jpeg");
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    border: 2px solid white;
+}
+
+#WantTrip2_title>.img>.img_cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+#WantTrip2_title *.ex{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    float: left;                                                                 
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: -1px;
+    word-spacing: 5px;
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+
+#WantTrip3_title>.img{
+    position: relative;
+    background-image: url("../img/Osaka/title.jpg");
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    border: 2px solid white;
+}
+
+#WantTrip3_title>.img>.img_cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+#WantTrip3_title *.ex{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    float: left;                                                                 
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: -1px;
+    word-spacing: 5px;
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+
+
+
+/* 인상 깊었던 싶은 여행지 */
+
+
+/*  인상 깊었던 여행지 타이틀  */
+#title_section{
+    margin-bottom: 100px;
+}
+#title_section .title{
+    color: #fe7171;
+    display: inline-block;
+    margin: 20px 50px 20px 100px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 50px;
+}
+#title_section .ex{
+    display: inline-block;
+    margin: 0px 50px 0px 0px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: -1px;
+    word-spacing: 5px; 
+}
+#title_section .img{
+    width: 43%;
+    border: 5px solid #ffb0b0;
+    border-radius: 10px;
+}
+
+#title2_section strong{
+    font-size: 50px;
+    color: green;
+}
+
+#title2_section .ex{
+    text-align: center;
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: -1px;
+    word-spacing: 5px; 
+}
+
+
+/*  인상 깊었던 여행 내용  */
+
+#content article{
+    margin: 50px 0px 50px 0px;
+}
+
+#content .img{
+    border: 5px solid  #335d2d;
+    border-radius: 10px;
+    width: 43%;
+}
+
+#content .ex{
+    width: 50%;
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: -1px;
+    word-spacing: 5px;
+}
+
+#content .ex .img2{
+    border: 5px solid #335d2d;
+    border-radius: 10px;
+    width: 28%;
+}
+
+#content2 .img{
+    border: 5px solid  #335d2d;
+    width: 40%;
+    border-radius: 20px;
+}
+
+#content2 .content2_1 div{
+    text-align: center;
+    margin: 80px 0 80px 0;
+}
+
+#content2 .content2_2>.all_img{
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#content2 .content2_1 .img{
+    width: 31%;
+}
+
+#content2 .content2_2 .img{
+    width: 30%;
+    border-radius: 70%;
+}
+
+#content2 .content2_2 .ex{
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+#content2 .content2_2 .ex b{
+    font-size: 20px;
+    color: green;
+}
+
+.content2_3{
+    text-align: center;
+}
+
+.img_m{
+    display: none;
+}
+
+.img_m2{
+    border: 5px solid  #335d2d;
+    border-radius: 10px;
+    width: 43%;
+}
+
+/* 이미지 설명 같이 하는 부분 */
+
+.content2_3 .img1{
+    margin: 25px 0 25px 0;
+    border: 5px solid #1976d2;
+    border-radius: 10px;
+    display: inline-block;
+    width: 45%;
+    position: relative;
+    background-image: url("../img/GaPeong/cat.jpg");
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content2_3 .img2{
+    margin: 25px 0 25px 0;
+    border: 5px solid #1976d2;
+    border-radius: 10px;
+    display: inline-block;
+    width: 45%;
+    position: relative;
+    background-image: url("../img/GaPeong/ramen.jpg");
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content2_3 .img3{
+    margin: 25px 0 25px 0;
+    border: 5px solid #1976d2;
+    border-radius: 10px;
+    display: inline-block;
+    width: 45%;
+    position: relative;
+    background-image: url("../img/GaPeong/play.jpg");
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content2_3 .img4{
+    margin: 25px 0 25px 0;
+    border: 5px solid #1976d2;
+    border-radius: 10px;
+    display: inline-block;
+    width: 45%;
+    position: relative;
+    background-image: url("../img/GaPeong/meat.jpg");
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content2_3 .img5{
+    margin: 25px 0 25px 0;
+    border: 5px solid #1976d2;
+    border-radius: 10px;
+    display: inline-block;
+    width: 45%;
+    position: relative;
+    background-image: url("../img/GaPeong/soju.jpg");
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.content2_3 .cover{
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    height: 25%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.content2_3 .ex{
+    font-size: 15px;
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 2;
+    text-align: center;
+    margin: 0;
+    width: 85%;
+    padding: 30px;
+}
+
+.youtube .ex{
+    margin: 100px 0 50px 0;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: -1px;
+    word-spacing: 1.5px;
+}
+
+.youtube .video{ 
+    position:relative; 
+    margin: 0 auto;
+    border: 5px solid #c62828;
+    border-radius: 10px;
+    width: 80%;
+    padding-bottom:40%;
+}
+
+.youtube iframe {
+    position:absolute; 
+    width:100%; 
+    height:100%; 
+}
+
+
+
+
+
+/* 푸터 */
+.footer_index{
+    width: 100%;
+    height: 50px;
+    margin-top: 22%;
+    position: absolute;
+    text-align: center;
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    position: absolute;
+    text-align: center;
+}
+
+/* 미디어 쿼리 */
+
+@media (max-width: 1830px) {
+
+#WantTrip_ex>.title>div, #WantTrip_eat>.title>div{
+    width: 32%;
+}
+#WantTrip_ex>.img>img, #WantTrip_eat>.img>img{
+    width: 30%;
+}
+#content2 .content2_1 .img{
+    width: 30%;
+}
+
+}
+
+/* 아이폰 7, 8기준 */
+
+@media (max-width: 480px) {
+
+header #title{
+    font-size: 18px;
+}
+
+
+#WantTrip_title{
+    margin: 5%;
+}
+#WantTrip_title .img{
+    height: 80vh;
+}
+
+
+/* 파리 */
+
+#WantTrip_title h1{
+    font-size: 25px;
+}
+
+#WantTrip_title .ex{
+    width: 95%;
+    font-size: 12px;
+}
+
+#WantTrip_title .title{
+    width: 93%;
+    font-size: 12px;
+}
+
+#WantTrip_title{
+    margin: 5%;
+}
+#WantTrip_title .img{
+    height: 80vh;
+}
+
+/* 블라디 보스토크 */
+
+#WantTrip2_title h1{
+    font-size: 15px;
+}
+
+#WantTrip2_title .ex{
+    width: 93%;
+    font-size: 12px;
+}
+
+#WantTrip2_title .title{
+    width: 93%;
+    font-size: 12px;
+}
+
+
+/* 오사카 */
+
+#WantTrip3_title{
+    margin: 5%;
+}
+#WantTrip3_title .img{
+    height: 80vh;
+}
+
+
+#WantTrip3_title h1{
+    font-size: 26px;
+}
+
+#WantTrip3_title .ex{
+    width: 93%;
+    font-size: 12px;
+}
+
+#WantTrip3_title .title{
+    width: 93%;
+    font-size: 12px;
+}
+
+/* 가고 싶은 여행지 공통 부분 */
+
+#WantTrip_ex .want{
+    font-size: 20px;
+}
+
+#WantTrip_ex .want_eat{
+    font-size: 25px;
+}
+
+#WantTrip_ex .img img{
+    width: 24%;
+}
+
+#WantTrip_ex .title div{
+    width: 31%;
+    font-size: 15px;
+}
+
+#WantTrip_ex .ex div{
+    display: none;
+}
+
+#WantTrip_eat .want{
+    font-size: 20px;
+}
+
+#WantTrip_eat .want_eat{
+    font-size: 20px;
+}
+
+#WantTrip_eat .img img{
+    width: 25%;
+}
+
+#WantTrip_eat .title div{
+    width: 31%;
+    font-size: 15px;
+}
+
+/* 가평 */
+#title2_section .ex strong{
+    font-size: 45px;
+}
+
+#title2_section .ex p{
+    margin: 0 5% 0 5%;
+    font-size: 13px;
+}
+
+#content2 .content2_1 .img{
+    width: 24%;
+}
+
+#content2 .content2_2 .img {
+    width: 41%;
+    border-radius: 70%;
+}
+
+#content2 .content2_2 .ex{
+    margin-top: 50px;
+    font-size: 12px;
+}
+
+.content2_3 .ex{
+    font-size: 11px;
+}
+
+.content2_3 .img1{
+   width: 90%;
+}
+.content2_3 .img2{
+    width: 90%;
+ }
+ .content2_3 .img3{
+    width: 90%;
+ }
+ .content2_3 .img4{
+    width: 90%;
+ }
+ .content2_3 .img5{
+    width: 90%;
+ }
+
+.youtube .ex{
+    font-size: 12px;
+    margin: 0 5% 0 5%;
+}
+
+/* 도쿄 */
+#title_section .title{
+    margin: 0 auto;
+    display: block;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+#title_section .ex{
+    margin: 0 auto;
+    letter-spacing: normal;
+    padding: 0 5% 0 5%;
+}
+
+#title_section .img{
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+}
+
+#content .img{
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+}
+
+
+#content .ex{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+#content .img{
+    display: none;
+}
+
+.img_m{
+    display: block;
+    margin: 0 auto;
+    border: 5px solid  #335d2d;
+    border-radius: 10px;
+    width: 85%;
+}
+
+.img_m2{
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+}
+
+#content .ex .img2{
+    width: 80%;
+}
+
+#content p{
+    font-size: 15px;
+}
+
+}
+
