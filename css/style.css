@@ -487,6 +487,20 @@ h1{
 
 /* 미디어 쿼리 */
 
+@media (max-width: 1830px) {
+
+#WantTrip_ex>.title>div, #WantTrip_eat>.title>div{
+    width: 32%;
+}
+#WantTrip_ex>.img>img, #WantTrip_eat>.img>img{
+    width: 30%;
+}
+#content2 .content2_1 .img{
+    width: 30%;
+}
+
+}
+
 /* 아이폰 7, 8기준 */
 
 @media (max-width: 480px) {
@@ -715,18 +729,4 @@ header #title{
 #content p{
     font-size: 15px;
 }
-}
-
-@media (max-width: 1830px) {
-
-#WantTrip_ex>.title>div, #WantTrip_eat>.title>div{
-    width: 32%;
-}
-#WantTrip_ex>.img>img, #WantTrip_eat>.img>img{
-    width: 30%;
-}
-#content2 .content2_1 .img{
-    width: 30%;
-}
-
 }
