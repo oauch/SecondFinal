@@ -16,7 +16,7 @@ html{
     
 }
 body{
-    animation: fadein 2s;
+    animation: fadein 3s;
     margin: 0;
 }
 a{
@@ -50,26 +50,44 @@ h1{
     margin: 15px;
 }
 
+ul{
+    text-align: center;
+    margin: 50px;
+    position: relative;
+    list-style: none;
+    transition: all .2s ease-in-out;
+}
+
 
 /* 프로필 섹션 */
 .profile>.img_align{
     text-align: center;
 }
 
-.img_align>figure{
-    display: inline-block;
-}
+
 
 .img_align>figure figcaption{
     text-align: center;
     padding-top: 5px;
 }
 
-.profile>div>figure>a>img{
+figure>a>img{
     width: 150px;
     height: 150px;
     border: 3px solid #FFEEE4;
 }
+
+figure{
+    display: inline-block;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+
+figure:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
 
 
 
@@ -302,7 +320,7 @@ h1{
 
 #content2 .content2_1 div{
     text-align: center;
-    margin: 80px 0 80px 0;
+    margin: 40px 0 80px 0;
 }
 
 #content2 .content2_2>.all_img{
@@ -485,6 +503,7 @@ h1{
     text-align: center;
 }
 
+
 /* 미디어 쿼리 */
 
 @media (max-width: 1830px) {
@@ -593,7 +612,16 @@ header #title{
 }
 
 #WantTrip_ex .img img{
-    width: 24%;
+    width: 80%;
+}
+
+#WantTrip_ex .img div{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#WantTrip_ex .title{
+    display: none;
 }
 
 #WantTrip_ex .title div{
@@ -605,6 +633,10 @@ header #title{
     display: none;
 }
 
+#WantTrip_eat{
+    margin-top: 100px;
+}
+
 #WantTrip_eat .want{
     font-size: 20px;
 }
@@ -614,15 +646,22 @@ header #title{
 }
 
 #WantTrip_eat .img img{
-    width: 25%;
+    width: 65%;
 }
 
-#WantTrip_eat .title div{
-    width: 31%;
-    font-size: 15px;
+#WantTrip_eat .img div{
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
-/* 가평 */
+#WantTrip_eat .title{
+    display: none;
+}
+
+
+
+/*      가평     */
+
 #title2_section .ex strong{
     font-size: 45px;
 }
@@ -633,7 +672,7 @@ header #title{
 }
 
 #content2 .content2_1 .img{
-    width: 24%;
+    width: 80%;
 }
 
 #content2 .content2_2 .img {
@@ -655,16 +694,19 @@ header #title{
 }
 .content2_3 .img2{
     width: 90%;
-    }
-    .content2_3 .img3{
-    width: 90%;
-    }
-    .content2_3 .img4{
-    width: 90%;
-    }
-    .content2_3 .img5{
-    width: 90%;
-    }
+}
+
+.content2_3 .img3{
+width: 90%;
+}
+
+.content2_3 .img4{
+width: 90%;
+}
+
+.content2_3 .img5{
+width: 90%;
+}
 
 .youtube .ex{
     font-size: 12px;
