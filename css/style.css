@@ -665,6 +665,14 @@ header #title{
     display: none;
 }
 
+#WantTrip_ex .img div{
+    display: block;
+}
+
+#WantTrip_eat .img div{
+    display: block;
+}
+
 
 
 /*      가평     */
