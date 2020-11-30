@@ -140,6 +140,13 @@ figure:hover{
     opacity: 1;
 }
 
+#WantTrip_ex .img div{
+    display: none;
+}
+
+#WantTrip_eat .img div{
+    display: none;
+}
 
 
 
